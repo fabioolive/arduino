@@ -1,4 +1,4 @@
 arduino
 =======
 
-Sketches divertidos para brincar com Arduino
+Sketches divertidos para brincar com Arduino.
