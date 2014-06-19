@@ -1,0 +1,5 @@
+hexedit teste.bin 
+avr-objcopy -I binary -O elf32-avr --rename-section .data=.text,contents,code teste.bin teste.elf
+avr-objdump -d teste.elf 
+avr-objcopy -I binary -O ihex teste.bin teste.hex
+avrdude -P /dev/ttyUSB0 -p ATmega328P -b 115200 -c arduino -U flash:w:teste.hex:i
